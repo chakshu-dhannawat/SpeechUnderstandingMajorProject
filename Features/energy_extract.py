@@ -20,7 +20,7 @@ def calculate_energy_features(signal, sample_rate, window_length_ms=25, shift_ms
 def extract_energy(args):
     print(
         f"Extracting energy values for dataset at {args.in_dir} and saving it in {args.out_dir}")
-    for in_path in tqdm(list(args.in_dir.rglob(f"*{args.extension}"))):
+    for in_path in tqdm(list(args.in_dir.rglob("*.wav"))):
         sr, audio = read(in_path)
         energy = calculate_energy_features(audio, sr)
         out_path = args.out_dir / in_path.relative_to(args.in_dir)

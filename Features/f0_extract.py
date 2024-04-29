@@ -14,7 +14,7 @@ def getPitch(file_path):
 def extract_f0(args):
     print(
         f"Extracting F0 values and for dataset at {args.in_dir} saving it in {args.out_dir}")
-    for in_path in tqdm(list(args.in_dir.rglob(f"*{args.extension}"))):
+    for in_path in tqdm(list(args.in_dir.rglob(f"*.wav"))):
         pitch = getPitch(in_path)
         out_path = args.out_dir / in_path.relative_to(args.in_dir)
         out_path.parent.mkdir(parents=True, exist_ok=True)

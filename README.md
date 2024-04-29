@@ -17,4 +17,7 @@ For feature extraction use: \
 For training use:\
 main.py [options]\
 
+For testing use:\
+Store trained model in project/baseline_LA/__pretrained as 
+main.py --inference --model-forward-with-file-name --trained-model ${trained_model}> ${log_name}.txt 2>${log_name}_err.txt
 *IMPORTANT*: change LOSS function in config.py. Last function defines the LOSS currently as BCE change it as per requirements.
