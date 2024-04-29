@@ -1,12 +1,11 @@
-import os
 import argparse
+from tqdm import tqdm
 
-def make_data_lst(args):
+def make_manifest(args):
     with open(args.file_name, "w") as f:
-        for file in os.listdir(args.in_dir):
-            f.write(file.removeSuffix(".wav"))
+        for in_path in tqdm(list(args.in_dir.rglob(f"*.wav"))):
+            f.write(in_path+" speaker1 " + "\n")
         f.close()
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -22,4 +21,4 @@ if __name__ == "__main__":
     )
     parser.add_argument()
     args = parser.parse_args()
-    make_data_lst(args)
+    make_manifest(args)
