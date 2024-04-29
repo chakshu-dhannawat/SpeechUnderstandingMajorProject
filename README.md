@@ -2,7 +2,7 @@
 ## Feature Extraction
 For feature extraction use: \
 (A) F0: \
-\t    f0_extract.py in-dir out-dir \
+    f0_extract.py in-dir out-dir \
 (B) Energy: \
 \t    energy_extract.py in-dir out-dir \
 (C) Duration HuBERT: \
