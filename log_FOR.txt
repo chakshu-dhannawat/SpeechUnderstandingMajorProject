@@ -1,0 +1,11 @@
+Dataset: FOR | Model: LCNN | Loss: BCE
+---------------------------------------------
+
+
+Features                        | EER(%)
+MFCC                            | 26.72
+F0(A)                           | 37.28
+Energy(B)                       | 40.19
+Duration(C)                     | 36.56
+XLS-R(Wav2Vec2)(300 M)          | 24.61
+XLS-R+A+B+C                     | 23.53

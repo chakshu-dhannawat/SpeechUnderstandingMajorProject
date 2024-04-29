@@ -5,6 +5,7 @@ import amfm_decompy.pYAAPT as pYAAPT
 import amfm_decompy.basic_tools as basic
 from tqdm import tqdm
 
+# DATASET_PATH = r"C:\Users\chaks\SpeechUnderstandingMajorProject\SpeechUnderstandingMajorProject\Dataset\New folder\for-2seconds\training\real"
 
 def getPitch(file_path):
     signal = basic.SignalObj(file_path)

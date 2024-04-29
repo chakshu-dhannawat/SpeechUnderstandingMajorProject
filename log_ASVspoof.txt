@@ -1,0 +1,11 @@
+Dataset: ASVspoof2021 | Model: LCNN | Loss: BCE
+---------------------------------------------
+
+
+Features                        | EER(%)
+MFCC                            | 32.91
+F0(A)                           | 43.06
+Energy(B)                       | 48.74
+Duration(C)                     | 41.83
+XLS-R(Wav2Vec2)(300 M)          | 30.32
+XLS-R+A+B+C                     | 28.63

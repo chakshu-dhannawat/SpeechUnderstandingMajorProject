@@ -21,6 +21,7 @@ import sandbox.block_nn as nii_nn
 import sandbox.util_frontend as nii_front_end
 import core_scripts.other_tools.debug as nii_debug
 import core_scripts.data_io.seq_info as nii_seq_tk
+from LMCL_loss import LMCL_loss
 
 
 __author__ = "Xin Wang"
@@ -417,6 +418,8 @@ class Loss():
         """
         """
         self.m_loss = torch_nn.BCELoss()
+
+        # self.m_loss = LMCL_loss(num_classes=2, feat_dim=1, s=7.00, m=0.2)
 
 
     def compute(self, outputs, target):

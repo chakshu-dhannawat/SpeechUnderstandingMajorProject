@@ -1,0 +1,17 @@
+-------------------------------------------------------
+Dataset:FOR  | Model: LCNN | Features: A+B+C+XLS-R
+
+Loss                    | EER(%)
+Cross-Entropy (BCE)     | 23.53
+LMCL                    | 23.41
+
+
+-------------------------------------------------------
+Dataset:ASVspoof2021  | Model: LCNN | Features: A+B+C+XLS-R
+
+Loss                    | EER(%)
+Cross-Entropy (BCE)     | 28.63
+LMCL                    | 27.99
+
+
+

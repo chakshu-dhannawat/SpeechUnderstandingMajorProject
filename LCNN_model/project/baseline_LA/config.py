@@ -32,9 +32,9 @@ tmp = os.path.dirname(__file__) + '/../DATA/toy_example'
 
 # File lists (text file, one data name per line, without name extension)
 # trin_file_list: list of files for training set
-trn_list = tmp + '/scp/train.lst'  
+trn_list = r"C:\Users\chaks\SpeechUnderstandingMajorProject\SpeechUnderstandingMajorProject\Features\test_fake.lst"
 # val_file_list: list of files for validation set. It can be None
-val_list = tmp + '/scp/val.lst'
+val_list = None
 
 # Directories for input features
 # input_dirs = [path_of_feature_1, path_of_feature_2, ..., ]

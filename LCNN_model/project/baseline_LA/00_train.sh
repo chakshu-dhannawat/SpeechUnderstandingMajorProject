@@ -25,7 +25,7 @@ python main.py --model-forward-with-file-name \
        --no-best-epochs 50 --batch-size 64 \
        --sampler block_shuffle_by_length \
        --lr-decay-factor 0.5 --lr-scheduler-type 1 \
-       --trained-model ${pretrained_model} \
+       # --trained-model ${pretrained_model} \
        --ignore-training-history-in-trained-model \
        --lr 0.0003 --seed 1000 > ${log_train_name}.txt 2>${log_err_name}.txt
 echo -e "Training process finished"
